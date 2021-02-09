@@ -37,6 +37,7 @@ map <F10> :tabprev<CR>
 map <F11> :tabnext<CR> 
 
 inoremap jj <Esc>
+vnoremap <C-c> "*y :let @+=@*<CR>
 
 "" Airline specific settings
 let g:airline_theme = 'ratbyte'
