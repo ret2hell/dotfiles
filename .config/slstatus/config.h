@@ -18,6 +18,6 @@ static const struct arg args[] = {
 	{ disk_perc, "disk: %s%% | ", "/"    },
 	{ netspeed_rx, "r: %sB/s ", "change_interface" },
 	{ netspeed_tx, "t: %sB/s | ", "change_interface" },
-	{ run_command, "%2s | ", "network.sh" },
+	{ run_command, "%10s | ", "network.sh" },
 	{ datetime, "%s", "%b %d %R" },
 };
