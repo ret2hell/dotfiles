@@ -45,6 +45,8 @@ vimode
 /set buflist.look.mouse_wheel off
 /set irc.color.input_nick red
 /set irc.color.nick_prefixes "y:lightred;q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue"
+/set irc.look.color_nicks_in_nicklist on
+/set irc.look.color_nicks_in_names on
 /set irc.color.reason_quit red
 /set irc.color.topic_new red
 /set irc.look.buffer_switch_autojoin off
@@ -126,6 +128,14 @@ vimode
 /set weechat.plugin.autoload *
 /set weechat.startup.display_logo off
 /set weechat.startup.display_version off
+/set script.scripts.download_enabled on
+/set weechat.bar.status.conditions "${window.buffer.full_name} != perl.highmon"
+/set weechat.bar.input.conditions "${window.buffer.full_name} != perl.highmon"
+/set plugins.var.perl.highmon.short_name "off"
+/set plugins.var.perl.highmon.alignment "nchannel, nick" 
+/window splith 20
+/buffer highmon
+/window 1
 ```
 
 ---
@@ -139,12 +149,16 @@ vimode
 
 ### Servers
 ```
-/server add freenode irc.freenode.com/6697 -ssl
+/server add freenode ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion/7000 -ssl
+/proxy add tor socks5 127.0.0.1 9050
+/set irc.server.freenode.proxy "tor"
+/set irc.server.freenode.ssl_verify off
+
 /server add efnet irc.servercentral.net/999 -ssl
 /server add unreal irc.unrealircd.org/6697 -ssl
 /server add 2f30 irc.2f30.org/6697 -ssl
 
-/set irc.server.freenode.autojoin #archlinux,#gentoo,#vim,##C,#python,#corelan,#weechat
+/set irc.server.freenode.autojoin #archlinux,#gentoo,#vim,##C,#python,#corelan,#weechat,##linux
 /set irc.server.2f30.autojoin #2f30
 ```
 
