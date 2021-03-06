@@ -128,6 +128,7 @@ vimode
 /set weechat.plugin.autoload *
 /set weechat.startup.display_logo off
 /set weechat.startup.display_version off
+/set plugins.var.python.vimode.imap_esc "jj"
 /set script.scripts.download_enabled on
 /set weechat.bar.status.conditions "${window.buffer.full_name} != perl.highmon"
 /set weechat.bar.input.conditions "${window.buffer.full_name} != perl.highmon"
