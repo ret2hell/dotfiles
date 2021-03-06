@@ -11,7 +11,7 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function, format, argument */
-	{ kernel_release, "  %s(gentoo) ~ ", NULL},
+	{ kernel_release, "%2s(gentoo) ~ ", NULL},
 	{ cpu_perc, "cpu: %s%% | ", NULL },
 //	{ ram_perc, "ram: %s%% | ", NULL },
 	{ ram_used, "ram: %s | ", NULL },
@@ -21,6 +21,6 @@ static const struct arg args[] = {
 	{ run_command, "%s | ", "network.sh" },
 	{ run_command, "vol: %4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 //	{ battery_state, "%s"    , "BAT0" },
-//  { battery_perc,  " %s%% | ", "BAT0" },
+//	{ battery_perc,  " %s%% | ", "BAT0" },
 	{ datetime, "%s", "%b %d %R" },
 };
