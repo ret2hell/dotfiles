@@ -6,7 +6,8 @@ export ZSH="/home/eclipze/.config/zsh/.oh-my-zsh"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
-export TERM="st-256color"
+
+[[ $TMUX = "" ]] && export TERM="st-256color"
 
 ZSH_THEME="gianu"
 
