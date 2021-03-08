@@ -6,9 +6,7 @@ export ZSH="/home/eclipze/.config/zsh/.oh-my-zsh"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
-
-# TMUX
-[[ $TMUX = "" ]] && export TERM="xterm-256color"
+export TERM="st-256color"
 
 ZSH_THEME="gianu"
 
@@ -71,7 +69,6 @@ alias myip="curl https://ipecho.net/plain; echo"
 alias grep='grep --color=auto'
 alias weather='curl -s wttr.in/Sydney'
 alias sydney="curl 'wttr.in/Sydney?format=%l:+%t'"
-alias tmuxr="tmux source-file ~/.config/tmux/tmux.conf"
 alias tkill="tmux kill-session" 
 alias zshr="source ~/.config/zsh/zshrc"
 alias e="exit"
