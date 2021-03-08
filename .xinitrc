@@ -5,5 +5,5 @@ sh ~/.local/bin/xrandr-mon
 #~/.local/bin/dwmbar &
 slstatus &
 setxkbmap us
-urxvtd -q -o -f
+#urxvtd -q -o -f
 exec dwm

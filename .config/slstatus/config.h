@@ -11,7 +11,7 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function, format, argument */
-	{ kernel_release, "%2s(gentoo) ~ ", NULL},
+	{ kernel_release, "  %s(gentoo) ~ ", NULL},
 	{ cpu_perc, "cpu: %s%% | ", NULL },
 //	{ ram_perc, "ram: %s%% | ", NULL },
 	{ ram_used, "ram: %s | ", NULL },
