@@ -37,7 +37,7 @@ vimode
 ### Settings
 ```
 /set buflist.format.buffer "${format_number}${indent}${format_nick_prefix}${color_hotlist}${format_name}"
-/set buflist.format.buffer_current "${color:,blue}${format_buffer}"
+/set buflist.format.buffer_current "${color:,red}${format_buffer}"
 /set buflist.format.indent "${color:128}${if:${buffer.next_buffer.local_variables.type}=~^(channel|private)$?├:└}"
 /set buflist.format.hotlist_highlight "${color:magenta}"
 /set buflist.format.hotlist_message "${color:cyan}"
@@ -86,12 +86,12 @@ vimode
 /set weechat.bar.input.items "[input_prompt]+(away),[input_search],[input_paste],input_text"
 /set weechat.bar.input.separator off
 /set weechat.bar.nicklist.size_max 20
-/set weechat.bar.status.color_bg blue
-/set weechat.bar.status.color_delim cyan
+/set weechat.bar.status.color_bg darkgray
+/set weechat.bar.status.color_delim red
 /set weechat.bar.status.conditions ""
 /set weechat.bar.status.items "[time],[buffer_last_number],[buffer_plugin],buffer_number+:+buffer_name+(buffer_modes)+{buffer_nicklist_count}+buffer_zoom+buffer_filter,scroll,[lag],[hotlist],completion"
 /set weechat.bar.status.separator off
-/set weechat.bar.title.color_bg	blue
+/set weechat.bar.title.color_bg	darkgray
 /set weechat.bar.title.separator off
 /set weechat.bar.title.size_max 2
 /set weechat.color.chat_delimiters green

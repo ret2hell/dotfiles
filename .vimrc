@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 	Plug 'preservim/nerdtree'
+	Plug 'dracula/vim' 
 	Plug 'dylanaraps/wal'
 call plug#end()
 
@@ -21,7 +22,8 @@ set shell=zsh
 set encoding=utf-8
 syntax enable
 "colorscheme candymouse
-colorscheme wal
+colorscheme dracula
+hi Normal guibg=NONE ctermbg=NONE
 
 " bindings
 map <F1> :NERDTreeFocus<CR> 

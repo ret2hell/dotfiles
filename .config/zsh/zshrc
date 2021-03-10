@@ -9,13 +9,13 @@ export EDITOR="$VISUAL"
 
 [[ $TMUX = "" ]] && export TERM="st-256color"
 
-ZSH_THEME="gianu"
+PROMPT="%B%n@%M [ %~ ]
+> "
+
+ZSH_THEME="candy_mod"
 
 # Plugins
-plugins=(git)
-plugins+=(k)
-plugins+=(zsh-syntax-highlighting)
-plugins+=(vi-mode)
+plugins=(git zsh-syntax-highlighting k vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 

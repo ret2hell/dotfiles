@@ -9,20 +9,23 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 20;       /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 //static const char *fonts[]          = { "Gohu GohuFont:size=10" };
 //static const char dmenufont[]       = "Gohu GohuFont:size=10";
-static const char *fonts[]          = { "lucy tewi:size=8" };
-static const char dmenufont[]       = "lucy tewi:size=8";
-static const char col_gray1[]       = "#222222"; // background
-static const char col_gray2[]       = "#444444"; // inactive window border
-static const char col_gray3[]       = "#bbbbbb"; // font
-static const char col_gray4[]       = "#eeeeee"; // current tag and current window font
-static const char col_purp[]        = "#72006d"; // top bar / second bar color & active window border color
-static const char col_magenta[]        = "#756bb1"; // top bar / second bar color & active window border color
-static const char col_black[]       = "#0c0d12";
+static const char *fonts[]          = { "tewi:size=8" };
+static const char dmenufont[]       = "tewi:size=8";
 
+static const char col_gray1[]       = "#141022";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_cyan[]        = "#7957B9";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_black, col_gray2 },
-	[SchemeSel]  = { col_magenta, col_black,  col_magenta  },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeStatus]  = { col_gray4, col_cyan,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  = { col_gray4, col_cyan,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+	[SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+	[SchemeInfoSel]  = { col_gray3, col_gray1,  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+	[SchemeInfoNorm]  = { col_gray3, col_gray1,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
 /* tagging */
@@ -68,8 +71,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_purp, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "urxvtc", NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *termcmd[]  = { "st", NULL };
 
 
 static Key keys[] = {
