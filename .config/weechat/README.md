@@ -143,7 +143,7 @@ vimode
 
 ### Triggers
 ```
-/trigger add input_command_color modifier "500|input_text_display" "${tg_string} =~ ^/($|[^/])" "#/(.+)#${color:196}/${color:90}${re:1}#"
+/trigger add input_command_color modifier "500|input_text_display" "${tg_string} =~ ^/($|[^/])" "#/(.+)#${color:black}/${color:red}${re:1}#"
 /trigger add url_color modifier "weechat_print" "${tg_tags} !~ irc_quit" ";[a-z]+://\S+;${color:127}${color:underline}${re:0}${color:-underline}${color:reset};" ""
 ```
 ---
