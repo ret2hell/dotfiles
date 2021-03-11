@@ -104,7 +104,7 @@ static const char *colorname[] = {
   [15] = "#ffffff", /* white   */
 
   /* special colors */
-  [256] = "#282a36", /* background */
+  [256] = "#141022", /* background */
   [257] = "#f8f8f2", /* foreground */
 };
 
@@ -124,11 +124,8 @@ static unsigned int defaultrcs = 257;
  */
 unsigned int defaultitalic = 7;
 unsigned int defaultunderline = 7;
+
 /*
- * Default shape of cursor
- * 2: Block ("█")
- * 4: Underline ("_")
->>>>>>>
  * spaces per tab
  *
  * When you are changing this value, don't forget to adapt the »it« value in

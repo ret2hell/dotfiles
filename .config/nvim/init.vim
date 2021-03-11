@@ -36,5 +36,5 @@ let g:indentLine_fileTypeExclude = ['markdown', 'startify', 'man']
 "autocommands
 autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown
 autocmd BufNewFile,BufRead *.ino set ft=c
-autocmd FileType c,cpp,html,css,ino setlocal expandtab shiftwidth=2 softtabstop=2 cindent nofoldenable 
+autocmd FileType c,cpp,html,css,ino setlocal expandtab shiftwidth=4 softtabstop=4 cindent nofoldenable 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 autoindent
