@@ -25,6 +25,6 @@ Here's an overview an overview of the software I use:
 
 ## nvim
 
-![nvim](https://github.com/ret2hell/dotfiles/blob/master/scrot/nvim.png)
+![nvim](https://github.com/ret2hell/dotfiles/blob/master/scrots/nvim.png)
 
-I've been using vim for _many_ _many_ years, so I thought i'd try out neovim. So far it's great and has worked very well with my workflow.
+I've been using vim for _many_ _many_ years, so I thought I'd try out neovim. So far it's great and has worked very well with my workflow.
