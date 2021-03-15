@@ -51,6 +51,13 @@ vimode
 /set irc.color.topic_new red
 /set irc.look.buffer_switch_autojoin off
 /set irc.look.buffer_switch_join off
+/set irc.ctcp.clientinfo ""
+/set irc.ctcp.finger ""
+/set irc.ctcp.source ""
+/set irc.ctcp.time ""
+/set irc.ctcp.userinfo ""
+/set irc.ctcp.version ""
+/set irc.ctcp.ping ""
 /set irc.look.display_ctcp_blocked off
 /set irc.look.display_ctcp_reply off
 /set irc.look.display_ctcp_unknown off
@@ -78,7 +85,7 @@ vimode
 /set irc.server_default.ssl_verify off
 /set irc.server_default.username "change"
 /set plugins.var.perl.highmon.first_run false
-/set plugins.var.perl.highmon.short_names on
+/set plugins.var.perl.highmon.short_names off
 /set sec.crypt.hash_algo sha512
 /set weechat.bar.buflist.size_max 20
 /set weechat.bar.fset.separator off
@@ -95,7 +102,7 @@ vimode
 /set weechat.bar.title.separator off
 /set weechat.bar.title.size_max 2
 /set weechat.color.chat_delimiters green
-/set weechat.color.chat_highlight_bg magenta
+/set weechat.color.chat_highlight_bg 236
 /set weechat.color.chat_host cyan
 /set weechat.color.chat_nick cyan
 /set weechat.color.chat_nick_colors "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue,31,35,38,40,49,63,70,80,92,99,112,126,130,138,142,148,160,162,167,169,174,176,178,184,186,210,212,215,247"
@@ -132,8 +139,7 @@ vimode
 /set script.scripts.download_enabled on
 /set weechat.bar.status.conditions "${window.buffer.full_name} != perl.highmon"
 /set weechat.bar.input.conditions "${window.buffer.full_name} != perl.highmon"
-/set plugins.var.perl.highmon.short_name "off"
-/set plugins.var.perl.highmon.alignment "nchannel, nick" 
+/set plugins.var.perl.highmon.alignment "channel" 
 /window splith 20
 /buffer highmon
 /window 1
@@ -155,7 +161,7 @@ vimode
 /set irc.server.freenode.proxy "tor"
 /set irc.server.freenode.ssl_verify off
 
-/server add efnet irc.servercentral.net/999 -ssl
+/server add efnet irc.servercentral.net/9999 -ssl
 /server add unreal irc.unrealircd.org/6697 -ssl
 /server add 2f30 irc.2f30.org/6697 -ssl
 

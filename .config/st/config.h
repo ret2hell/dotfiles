@@ -10,7 +10,7 @@
 //static char *font = "Gohu GohuFont:size=11:antialias=true";
 //static char *font = "xos4 Terminus:size=12:antialias=true";
 static char *font = "TerminessTTF Nerd Font Mono:size=12:antialias=true";
-static int borderpx = 32;
+static int borderpx = 24;
 
 /*
  * What program is execed by st depends of these precedence rules:
