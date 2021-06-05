@@ -2,22 +2,28 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/eclipze/.config/zsh/.oh-my-zsh"
+export ZSH="/home/eclipto/.config/zsh/.oh-my-zsh"
 
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
+export MPD_HOST=$HOME/.config/mpd/socket
 
 [[ $TMUX = "" ]] && export TERM="st-256color"
 
-PROMPT="%B%n@%M [ %~ ]
+PROMPT="%B%n@%M [ %~ ] 
 > "
 
 ZSH_THEME="candy_mod"
+
+#ZSH_THEME="half-life"
 
 # Plugins
 plugins=(git zsh-syntax-highlighting k vi-mode)
 
 source $ZSH/oh-my-zsh.sh
+
+#Binds
+bindkey -M viins 'jj' vi-cmd-mode
 
 # Clear history
 function clear_history { local HISTSIZE=0; }
@@ -66,17 +72,21 @@ function makezip() { zip -r "${1%%/}.zip" "$1" ; }
 ### aliases
 alias free="free -mt"
 alias ps="ps auxf"
-alias myip="curl https://ipecho.net/plain; echo"
+alias myip="curl ipecho.net/plain; echo"
 alias grep='grep --color=auto'
 alias weather='curl -s wttr.in/Sydney'
 alias sydney="curl 'wttr.in/Sydney?format=%l:+%t'"
 alias tkill="tmux kill-session" 
-alias zshr="source ~/.config/zsh/zshrc"
+alias zshr="source ~/.config/zsh/.zshrc"
 alias e="exit"
+alias c="clear"
 alias cat="ccat"
-alias discordfetch="nohup fetchcord --config-path /home/eclipze/FetchCord/fetch_cord.conf --nohardware --noshell --nohost &"
 alias ytm='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 -o "%(title)s.%(ext)s" --no-cache-dir --no-call-home'
 alias pipuser='pip install --user'
+alias nv='nvim'
+alias google='googler -n 5 -x --np --colors=nodgiy'
+alias ddgr='ddgr -n 5 -x --np --colors=nodgiy'
+alias ssgen='rm -rf ~/blog/dst/.files && ssg5 ~/blog/src ~/blog/dst "RET2HELL" "https://blog.ret2hell.wtf"'
 
 ### Lang
 export LC_ALL=en_US.UTF-8
